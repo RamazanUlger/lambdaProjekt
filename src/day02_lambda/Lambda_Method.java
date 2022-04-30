@@ -97,5 +97,8 @@ a ilk degerinden sonraki her değeri action(işlem)'dan alır
         System.out.println("Expression elde edilen "+sayi.stream().filter(C01_Lambda::ciftbul).reduce(1, (a, b) -> a * b));
         System.out.println("Expression olamdan elde dilen"+sayi.stream().filter(C01_Lambda::ciftbul).reduce(Math::multiplyExact));
     }
+    public static  int  minElemanBul(int a,int b){
+      int c =a<b ? a:b;
+    return c;}
 
 }
